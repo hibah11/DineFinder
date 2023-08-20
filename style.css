@@ -1,0 +1,56 @@
+.interAcrivebtn {
+    --c:  #2A9D8F;
+    
+    box-shadow: 0 0 0 .1em inset var(--c); 
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: 
+      var(--_g) calc(var(--_p,0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--_p,0%)) 0%,
+      var(--_g) calc(var(--_p,0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+  }
+.interAcrivebtn:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+    transform: rotate(5deg);
+  }
+.interAcrivebtn:active {
+    background-color: var(--c);
+    color: white;
+  }
+  
+
+.interAcrivebtn {
+    font-size: xx-large;
+    cursor: pointer;
+    padding: 10px;  
+    border: none;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+
+.offcanvas-header{
+    background-color: #F4A261;
+ }
+
+ .navbar-toggler{
+    background-color: #F4A261;
+ }
+
+#map {
+    height: 40%;
+    width: 100vw;
+  }
+  
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
